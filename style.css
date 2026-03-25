@@ -35,7 +35,7 @@ body {
 
 /* ===== CABEÇALHO ===== */
 header {
-    background-image: linear-gradient(to bottom, rgb(196, 17, 196), rgba(105, 15, 136, 0.996));
+    background-image: linear-gradient(to bottom, rgb(17, 196, 113), rgba(105, 15, 136, 0.996));
     color: white;
     text-align: center;
     padding: 10px;
