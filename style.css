@@ -35,7 +35,7 @@ body {
 
 /* ===== CABEÇALHO ===== */
 header {
-    background-image: linear-gradient(to bottom, rgb(17, 196, 113), rgba(105, 15, 136, 0.996));
+    background-image: linear-gradient(to bottom, rgb(17, 197, 113), rgba(105, 15, 136, 0.996));
     color: white;
     text-align: center;
     padding: 10px;
@@ -129,7 +129,7 @@ header p#t2 a i {
 /* ===== MENU SANDUÍCHE ===== */
 /* ======================================= */
 .navbar {
-    background-color: rgba(14, 14, 14, 0.85);
+    background-color: rgb(106, 15, 136);
     padding: 10px;
     position: relative;
     text-align: left;
@@ -174,10 +174,10 @@ header p#t2 a i {
     padding: 10px 15px;
     text-decoration: none;
     font-weight: bold;
-    background-image: linear-gradient(to left, rgba(255, 30, 0, 0.408), transparent); /* Usando a cor de destaque */
+    background-image: linear-gradient(to left, rgba(17, 197, 113, 0.547), transparent); /* Usando a cor de destaque */
 }
 .menu-links a:hover {
-    background-color: #ff4000fc; /* Cor de destaque no hover */
+    background-color: rgba(17, 197, 113, 0.463); /* Cor de destaque no hover */
     color: #1a1a1a;
 }
 /* ======================================= */
@@ -299,11 +299,11 @@ main {
 }
 
 .footer-col h4 {
-    color: #ff9900; /* Cor de destaque (laranja) */
+    color: #C97B84; /* Cor de destaque (laranja) */
     margin-bottom: 20px;
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 2px solid #ff9900;
+    border-bottom: 2px solid #C97B84;
     padding-bottom: 5px;
 }
 
@@ -316,7 +316,7 @@ main {
 }
 
 .footer-col a:hover {
-    color: #ff9900;
+    color: #C97B84;
 }
 
 .footer-col i {
@@ -361,7 +361,7 @@ main {
 }
 
 .contact-form button {
-    background-color: #ff9900;
+    background-color: #C97B84;
     color: #1a1a1a;
     border: none;
     padding: 10px 15px;
@@ -373,7 +373,7 @@ main {
 }
 
 .contact-form button:hover {
-    background-color: #e68a00;
+    background-color: #f16777;
 }
 
 /* --- Ícones Sociais do Rodapé --- */
