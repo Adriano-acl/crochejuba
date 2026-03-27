@@ -10,7 +10,7 @@
 /* ===== BODY (Fundo e Cor da Fonte Principal) ===== */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('imagens/blusa\ juba.jpeg'); 
+    background-image: url('imagem/blusa-juba.jpeg'); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -237,15 +237,15 @@ main {
 
 /* ====== IMAGENS DOS QUADROS ====== */
 #q1 {
-    background-image: url('imagens/juba\ 225x225.jpeg');
+    background-image: url('imagem/juba-225x225.jpeg');
 }
 
 #q2 {
-    background-image: url('imagens/blusa\ juba\ 225x225.jpeg');
+    background-image: url('imagem/blusa-juba-225x225.jpeg');
 }
 
 #q3 {
-    background-image: url('imagens/bolsa\ beje\ com\ imagem\ rosa\ 225x225.jpeg');
+    background-image: url('imagem/bolsa-beje-com-imagem-rosa-225x225.jpeg');
 }
 
 /* ====== DESCRIÇÃO SOBREPOSTA ====== */
