@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="imagem/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
     
@@ -112,7 +113,7 @@
 
             <div class="footer-col contact-form-container">
                 <h4>Fale Conosco</h4>
-                <form action="processa_contato.php" method="POST" class="contact-form">
+                <form id="form-contato" class="contact-form">
                     <input type="text" name="nome" placeholder="Seu Nome" required>
                     <input type="email" name="email" placeholder="Seu Email" required>
                     <textarea name="mensagem" rows="3" placeholder="Sua Mensagem" required></textarea>
@@ -170,6 +171,24 @@
                 menuLinks.classList.toggle('ativo');
             });
         }
+        // EMAILJS (ADICIONADO)
+(function(){
+    emailjs.init("v1VSp5kX_y_-I0LpD");
+})();
+
+const form = document.getElementById("form-contato");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_iu976k6", "template_19e4j2q", this)
+        .then(function() {
+            alert("Mensagem enviada com sucesso!");
+            form.reset();
+        }, function(error) {
+            alert("Erro ao enviar: " + JSON.stringify(error));
+        });
+});
     </script>
 </body>
 </html>
