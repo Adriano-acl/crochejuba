@@ -245,7 +245,7 @@ main {
 }
 
 #q3 {
-    background-image: url('imagem/bolsa-beje-com-imagem-rosa-225x225.jpeg');
+    background-image: url('imagem/bolsa-beje-com-imagem-rosa-inscreva1a225x225.jpeg');
 }
 
 /* ====== DESCRIÇÃO SOBREPOSTA ====== */
@@ -490,4 +490,62 @@ main {
         height: auto;
         max-width: 300px;
     }
+}
+
+.formulario-inscricao {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.formulario-inscricao h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-estilo h3 {
+    margin-top: 20px;
+    color: #444;
+}
+
+.form-estilo input,
+.form-estilo textarea,
+.form-estilo select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.form-estilo textarea {
+    resize: none;
+}
+
+.linha {
+    display: flex;
+    gap: 10px;
+}
+
+.linha input {
+    flex: 1;
+}
+
+.form-estilo button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #8B4513; /* marrom artesanal */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-estilo button:hover {
+    background-color: #a0522d;
 }

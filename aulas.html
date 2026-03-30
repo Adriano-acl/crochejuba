@@ -54,30 +54,76 @@
     </nav>
     
     <main>
-        <h1>A História do Crochê do Juba</h1>
-        <p>
-Comecei a fazer crochê aos 14 anos, em 2006. No início, produzia peças simples para uso em casa, como forma de aprendizado e desenvolvimento da habilidade manual. Com o tempo, fui me identificando cada vez mais com o artesanato, percebendo que aquilo não era apenas uma atividade, mas algo que realmente fazia parte de quem eu sou.
+        <h1>Aulas de Crochê, INSCREVA-SE!</h1>
+
+<p>
+Este projeto busca incentivar a prática do crochê como forma de expressão cultural, 
+promovendo a integração social e o compartilhamento de saberes entre os participantes.
 </p>
 
 <p>
-Mesmo atuando em outras áreas ao longo da vida, nunca abandonei o crochê. Sempre senti que minha verdadeira vocação estava no trabalho artesanal, algo que me traz satisfação e vontade constante de evoluir profissionalmente.
+A iniciativa também conta com o apoio de soluções tecnológicas para facilitar 
+a organização e o acesso às informações, contribuindo para o desenvolvimento do projeto.
 </p>
 
 <p>
-Em 2008, dei um passo importante ao abrir meu próprio ateliê. Nessa fase, produzia principalmente peças simples, mas sempre com dedicação, cuidado e atenção aos detalhes. Com o passar dos anos, fui aprimorando minhas técnicas, aprendendo novos pontos, modelos e acabamentos.
+Preencha o formulário abaixo para se inscrever.
 </p>
+<section class="formulario-inscricao">
+    <h2>Ficha de Inscrição - Aulas de Crochê</h2>
 
-<p>
-Atualmente, trabalho com peças mais elaboradas, especialmente no vestuário, desenvolvendo produtos únicos, feitos à mão e com alto nível de detalhamento. Também realizo encomendas personalizadas, buscando atender às preferências de cada cliente sem abrir mão da qualidade.
-</p>
+    <form id="form-inscricao" class="form-estilo">
 
-<p>
-Além da produção, também ensino crochê para pessoas da comunidade, compartilhando conhecimento e incentivando a valorização do trabalho manual. Acredito que o crochê pode ser uma ferramenta de aprendizado, geração de renda e preservação da cultura artesanal.
-</p>
+        <!-- DADOS PESSOAIS -->
+        <h3>Dados Pessoais</h3>
+        <input type="text" name="nome" placeholder="Nome completo" required>
 
-<p>
-Para mim, transmitir esse saber é uma forma de manter essa arte viva e alcançar cada vez mais pessoas.
-</p>
+        <div class="linha">
+            <input type="date" name="data_nascimento" required>
+            <input type="text" name="cpf" placeholder="CPF" required>
+        </div>
+
+        <div class="linha">
+            <input type="text" name="rg" placeholder="RG">
+            <input type="text" name="telefone" placeholder="Telefone" required>
+        </div>
+
+        <!-- CONTATO -->
+        <h3>Contato</h3>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <!-- ENDEREÇO -->
+        <h3>Endereço</h3>
+        <div class="linha">
+            <input type="text" name="cep" placeholder="CEP">
+            <input type="text" name="rua" placeholder="Rua">
+        </div>
+
+        <div class="linha">
+            <input type="text" name="numero" placeholder="Número">
+            <input type="text" name="bairro" placeholder="Bairro">
+        </div>
+
+        <div class="linha">
+            <input type="text" name="cidade" placeholder="Cidade">
+            <input type="text" name="estado" placeholder="Estado">
+        </div>
+
+        <!-- CURSO -->
+        <h3>Sobre o Curso</h3>
+        <select name="nivel" required>
+            <option value="">Nível de experiência</option>
+            <option value="iniciante">Iniciante</option>
+            <option value="intermediario">Intermediário</option>
+        </select>
+
+        <textarea name="observacoes" placeholder="Observações (opcional)"></textarea>
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+</section>
+
+</form>
         <picture>
             <img src="" alt="">
         </picture>
