@@ -49,7 +49,7 @@
         <ul class="menu-links" id="menu-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="historia_crochejuba.html">HISTÓRIA</a></li>
-            <li><a href="foto_crochejuba.html">GALERIA</a><li><a href="aulas.html">INSCREVA-SE</a></li>
+            <li><a href="foto_crochejuba.html">GALERIA</a></li><li><a href="aulas.html">INSCREVA-SE</a></li>
         </ul>
     </nav>
     
@@ -123,7 +123,7 @@ Preencha o formulário abaixo para se inscrever.
     </form>
 </section>
 
-</form>
+
         <picture>
             <img src="" alt="">
         </picture>
@@ -232,5 +232,64 @@ form.addEventListener("submit", function(event) {
         });
 });
     </script>
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDcwmQcHdOMIf8--emfKHpaTkYrdOzw5g8",
+    authDomain: "crochejuba-b6a7c.firebaseapp.com",
+    projectId: "crochejuba-b6a7c",
+    storageBucket: "crochejuba-b6a7c.firebasestorage.app",
+    messagingSenderId: "429786343670",
+    appId: "1:429786343670:web:f342263065fd7f8bd924d7"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  const formInscricao = document.getElementById("form-inscricao");
+
+  formInscricao.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const dados = new FormData(formInscricao);
+
+    try {
+      await addDoc(collection(db, "inscricoes"), {
+        nome: dados.get("nome"),
+        data_nascimento: dados.get("data_nascimento"),
+        cpf: dados.get("cpf"),
+        rg: dados.get("rg"),
+        telefone: dados.get("telefone"),
+        email: dados.get("email"),
+        cep: dados.get("cep"),
+        rua: dados.get("rua"),
+        numero: dados.get("numero"),
+        bairro: dados.get("bairro"),
+        cidade: dados.get("cidade"),
+        estado: dados.get("estado"),
+        nivel: dados.get("nivel"),
+        observacoes: dados.get("observacoes"),
+        data_envio: new Date()
+      });
+
+      emailjs.send("service_iu976k6", "template_19e4j2q", {
+    nome: dados.get("nome"),
+    email: dados.get("email"),
+    telefone: dados.get("telefone")
+});
+
+      alert("Inscrição enviada com sucesso!");
+      formInscricao.reset();
+
+    } catch (erro) {
+      alert("Erro ao enviar inscrição: " + erro);
+      console.error(erro);
+    }
+  });
+
+  
+</script>
 </body>
 </html>
